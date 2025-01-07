@@ -1,0 +1,22 @@
+name: photoshop
+buildsystem: simple
+sources:
+  - type: archive
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/Adobe.tar.xz
+    sha256: c1ed75f674d4d6c49434e6953f1476293d09925946275b7ebb883a96613f9d0a
+    dest: adobe
+  - type: archive
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/AdobePhotoshop2022.tar.xz
+    sha256: d417ac92073c4cf11ac7422dce0be3477d7b3bf1e7c118feeaed809002143170
+    dest: photoshop2022
+  - type: archive
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/Adobe_Photoshop_2022_Settings.tar.xz
+    sha256: 4ae1bd5be25fc2ff99a35dc7b340a3b061e14daa9ef773e73dffec5338a2045a
+    dest: settings
+build-commands:
+  - chmod -R +w photoshop2022
+  - rm -f photoshop2022/Plug-ins/desktop.ini
+  - cp -r adobe /app/adobe
+  - cp -r photoshop2022 /app/photoshop2022
+  - cp -r settings /app/settings
+

@@ -1,0 +1,17 @@
+id: com.adobe.photoshop2022
+command: photoshop.sh
+runtime: org.freedesktop.Platform
+base: org.winehq.Wine
+base-version: stable-24.08
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+finish-args:
+  - --socket=pulseaudio
+  - --socket=x11
+  - --share=ipc
+  - --device=dri
+modules:
+  - modules/photoshop2022/photoshop2022.yml
+  - modules/winetricks/winetricks.yml
+  - modules/launcher/launcher.yml
+
