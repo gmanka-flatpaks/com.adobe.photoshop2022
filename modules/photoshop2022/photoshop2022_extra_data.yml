@@ -1,3 +1,5 @@
+# downloading photoshop archive during the installation process as extra data, and will not download it while building
+
 name: photoshop
 buildsystem: simple
 sources:
@@ -5,7 +7,7 @@ sources:
     path: apply_extra
   - type: extra-data
     filename: Adobe.tar.xz
-    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/Adobe.tar.xz
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/commonfiles_adobe_2022.tar.xz
     sha256: c1ed75f674d4d6c49434e6953f1476293d09925946275b7ebb883a96613f9d0a
     size: 160230300
   - type: extra-data

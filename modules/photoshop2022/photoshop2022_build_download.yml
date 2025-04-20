@@ -1,8 +1,10 @@
+# downloading photoshop archive during the build process
+
 name: photoshop
 buildsystem: simple
 sources:
   - type: archive
-    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/Adobe.tar.xz
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/commonfiles_adobe_2022.tar.xz
     sha256: c1ed75f674d4d6c49434e6953f1476293d09925946275b7ebb883a96613f9d0a
     dest: Adobe
   - type: archive

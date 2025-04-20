@@ -1,0 +1,19 @@
+# import local photoshop archive file, you should download it manually if you want to use this module
+
+name: photoshop
+buildsystem: simple
+sources:
+  - type: archive
+    dest: Adobe
+    path: commonfiles_adobe_2022.tar.xz
+    sha256: c1ed75f674d4d6c49434e6953f1476293d09925946275b7ebb883a96613f9d0a
+  - type: archive
+    dest: photoshop2022
+    path: AdobePhotoshop2022.tar.xz
+    sha256: d417ac92073c4cf11ac7422dce0be3477d7b3bf1e7c118feeaed809002143170
+build-commands:
+  - chmod -R +w photoshop2022
+  - rm -f photoshop2022/Plug-ins/desktop.ini
+  - cp -r Adobe /app/Adobe
+  - cp -r photoshop2022 /app/photoshop2022
+

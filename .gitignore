@@ -1,4 +1,7 @@
 .flatpak-builder
-build
 repo
+build
+photoshop2022.flatpak
+AdobePhotoshop2022.tar.xz
+commonfiles_adobe_2022.tar.xz
 
