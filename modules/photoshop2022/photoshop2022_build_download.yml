@@ -5,10 +5,20 @@ buildsystem: simple
 sources:
   - type: archive
     url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/commonfiles_adobe_2022.tar.xz
+    mirror-urls:
+      - https://github.com/gmanka-flatpaks/photoshop-binaries/raw/refs/heads/main/commonfiles_adobe_2022.tar.xz
+      - http://web.archive.org/web/*/https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/latest/download/commonfiles_adobe_2022.tar.xz
+      # https://github.com/LinSoftWin/Photoshop-CC2022-Linux
+      # https://github.com/gmanka-flatpaks/photoshop-binaries
     sha256: c1ed75f674d4d6c49434e6953f1476293d09925946275b7ebb883a96613f9d0a
     dest: Adobe
   - type: archive
     url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/AdobePhotoshop2022.tar.xz
+    mirror-urls:
+      - https://github.com/gmanka-flatpaks/photoshop-binaries/raw/refs/heads/main/AdobePhotoshop2022.tar.xz
+      - https://web.archive.org/web/*/https://lulucloud.mywire.org/FileHosting/GithubProjects/PS2022/AdobePhotoshop2022.tar.xz
+      # https://github.com/LinSoftWin/Photoshop-CC2022-Linux
+      # https://github.com/gmanka-flatpaks/photoshop-binaries
     sha256: d417ac92073c4cf11ac7422dce0be3477d7b3bf1e7c118feeaed809002143170
     dest: photoshop2022
 build-commands:
