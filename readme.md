@@ -13,7 +13,7 @@ flatpak install gmanka com.adobe.photoshop2022
 ```shell
 git clone https://github.com/gmanka-flatpaks/com.adobe.photoshop2022
 cd com.adobe.photoshop2022
-sed -i 's|photoshop2022_extra_data.yml|photoshop2022_local.yml|' com.adobe.photoshop2022.yml
+sed -i 's|photoshop2022_build_download.yml|photoshop2022_local.yml|' com.adobe.photoshop2022.yml
 curl https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/AdobePhotoshop2022.tar.xz -Lo modules/photoshop2022/AdobePhotoshop2022.tar.xz
 curl https://github.com/gmanka-flatpaks/com.adobe.photoshop2022/releases/download/photoshop2022/commonfiles_adobe_2022.tar.xz -Lo modules/photoshop2022/commonfiles_adobe_2022.tar.xz
 flatpak --user remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
